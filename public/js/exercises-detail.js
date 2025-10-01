@@ -25,7 +25,7 @@ function pickMime() {
   return '';
 }
 
-async function startRecording() {
+async function startRec() {
   transcriptText = '';
   transcriptEl.textContent = '';
   chunks = [];
@@ -83,7 +83,7 @@ async function startRecording() {
   stopBtn.disabled = false;
 }
 
-async function stopRecording() {
+async function stopRec() {
   stopBtn.disabled = true;
 
   if (recognition) { try { recognition.stop(); } catch {} recognition = null; }
